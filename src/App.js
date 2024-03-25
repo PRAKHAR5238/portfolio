@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Navbar from './Components/Navbar';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Project from './Components/Project';
 
-function App() {
+
+const App = () => {
+  useEffect(() => {
+    Aos.init({
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      offset: 120,
+      delay: 0,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+    
+      <Routes>
+    
+        <Route path="/" element={<About />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/skills" element={<Skills />} />
+      
+      </Routes>
+    </Router>
   );
 }
 
