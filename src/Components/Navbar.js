@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const openGmail = () => {
   const recipient = 'prakharshukla062@gmail.com'; // Replace with your Gmail address
@@ -44,13 +45,13 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav" >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/Skills">Skills</a>
+                <Link className="nav-link active" to="/Skills">Skills</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/projects">Projects</a>
+                <Link className="nav-link active" to="/projects">Projects</Link>
               </li>
             </ul>
           </div>
