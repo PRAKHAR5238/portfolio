@@ -25,6 +25,10 @@ class Skills extends Component {
                                 <figcaption>JavaScript</figcaption>
                             </figure>
                             <figure className="card" data-aos="flip-left" data-aos-duration="1000">
+                                <img src="figma.png" alt="" />
+                                <figcaption>Figma</figcaption>
+                            </figure>
+                            <figure className="card" data-aos="flip-left" data-aos-duration="1000">
                                 <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-9294852-7577995.png" alt="TailWind"/>
                                 <figcaption>TailWind</figcaption>
                             </figure>
