@@ -26,7 +26,7 @@ export class About extends Component {
             proficiency in a range of programming languages and technologies
             essential for creating modern web applications. With expertise in React,
             JavaScript, HTML, CSS, Python, and Bootstrap, I am well-equipped to
-            contribute effectively to front-end and back-end development projects.
+            contribute effectively to front-end development projects.
             Additionally, my knowledge extends to leveraging artificial intelligence
             (AI) tools for productivity enhancements, allowing me to streamline
             processes and innovate within web development workflows.
