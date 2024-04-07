@@ -4,6 +4,7 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
+
 const openGmail = () => {
   const recipient = 'prakharshukla062@gmail.com'; // Replace with your Gmail address
   const subject = 'Subject'; // Optional: Replace with your desired subject
@@ -39,22 +40,24 @@ const Navbar = () => {
 
             </div>
           </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"  >
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{ width: '50px' }}  >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav" >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/Skills">Skills</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/projects">Projects</Link>
-              </li>
-            </ul>
-          </div>
+          <div className="collapse navbar-collapse" id="navbarNav">
+  <ul className="navbar-nav">
+    <li className="nav-item">
+      <Link className="nav-link active home-link" aria-current="page" to="/" style={{ fontWeight: 900, fontFamily: 'Recoleta, sans-serif' }}>Home</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link active skills-link" to="/Skills" style={{ fontWeight: 900, fontFamily: 'Recoleta, sans-serif' }}>Skills</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link active projects-link" to="/projects" style={{ fontWeight: 900, fontFamily: 'Recoleta, sans-serif' }}>Projects</Link>
+    </li>
+  </ul>
+</div>
+
+
         </div>
       </nav>
     </>

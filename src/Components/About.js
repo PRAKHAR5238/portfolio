@@ -14,7 +14,7 @@ export class About extends Component {
             <h1 id='about'>
               Hi,
               I'm Prakhar Shukla,
-              a web developer.
+              a Web developer.
             </h1>
             <a href={pdf} download='Resume.pdf' className="btn btn-outline-warning">
               Download Resume

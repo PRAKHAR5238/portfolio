@@ -2,7 +2,7 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgb(188, 229, 240);
   margin: 0;
-  font-family: 'Alegreya Sans';
+  /* font-family: 'Alegreya Sans'; */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -37,8 +37,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Navbar starting here */
 
-
-
 a {
   text-decoration: none;
   color: rgb(160, 229, 128);
@@ -50,7 +48,7 @@ a {
   justify-content: space-around;
   /* height: 90px; */
   /* background-color: #000000; */
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   margin: auto;
   /* padding: 1rem; */
 
@@ -66,7 +64,7 @@ a {
   /* Decrease padding for smaller screens */
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .nav-item:hover {
@@ -80,23 +78,32 @@ a {
     flex-direction: column;
     /* Stack items vertically on smaller screens */
   }
-
+  
   .navitem {
     padding: 10px;
     /* Decrease padding further for smaller screens */
     font-size: 16px;
     /* Adjust font size for smaller screens */
   }
+
 }
 
 .left {
   color: blanchedalmond;
 }
 
+
 /* Navbar end here */
 
 /* home page start */
-
+.btn{
+  margin-top: 40px;
+  
+}
+.btn:hover{
+  background-color: greenyellow;
+  
+}
 .container-home {
   display: flex;
   justify-content: space-around;
@@ -188,11 +195,13 @@ h2 {
   text-align: center;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  font-weight: bold;
+  font-weight: 400; /* Regular weight */
   font-size: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   word-spacing: 6px;
+  font-family: 'Playfair Display', serif; /* Added Playfair font family */
 }
+
 
 
 .mid-home {
@@ -211,15 +220,17 @@ h2 {
 
 
 
-
 h1#about {
-  font: 50px;
+  font-size: 40px;
   animation: clip-path-reveal-1 3s ease infinite alternate;
-  color: rgb(34, 172, 57);
-  font: bold;
+  color: rgb(85, 206, 105);
+  font-family: 'Rubik', sans-serif; /* Changed from serif to sans-serif */
+  font-weight: 500; /* Medium 500 font weight */
 }
 
-/* .mid-home{
+
+/* 
+.mid-home{
   font: 20px;
   animation: clip-path-reveal-1 3s ease infinite alternate;
   color: rgb(34, 172, 57);
@@ -371,11 +382,10 @@ h2 {
   font-size: 50px;
   justify-content: center;
   color: rgb(226, 228, 241);
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: 6px;
-  font-weight: 900;
-
-
+  font-weight: 500;
+  font-family: 'Recoleta', sans-serif; /* Assuming Recoleta font is loaded */
 }
 
 
@@ -493,6 +503,7 @@ h2 {
 
   h2 {
     font-size: 40px;
+    
   }
 
   .cards {
@@ -530,9 +541,10 @@ h1 strong {
   justify-content: center;
   font-size: 50px;
   color: rgb(226, 228, 241);
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: 6px;
-  font-weight: 900;
+  font-weight: 500;
+  font-family: 'Recoleta', sans-serif;
 
 }
 
