@@ -10,7 +10,7 @@ body {
   /* Enable vertical scrolling */
   background-repeat: no-repeat;
   background-size: cover;
-  background: #ff0000 url(https://wallpapercave.com/wp/wp2406611.jpg) top center repeat-y;
+  background: url(https://wallpapercave.com/wp/wp2406611.jpg) ;
   background-size: 100%;
 }
 
