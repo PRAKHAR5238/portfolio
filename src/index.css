@@ -665,8 +665,10 @@ section {
 }
 
 .item-f {
-  background-image: url('projec/Screenshot\ \(17\).png');
-  background-size: cover;
+  background-image: url('projec/19.png');
+  background-size: contain;
+  /* background: 100%; */
+  background-repeat: no-repeat;
 }
 
 
